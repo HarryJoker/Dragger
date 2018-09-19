@@ -5,7 +5,8 @@ Library: DraggerPageLayout
 可拖动View到任意位置的Layout（可分页）
 
 展示效果：
-![image](https://github.com/huare/Dragger/screens/dragger.gif)
+
+![image](https://github.com/huare/Dragger/blob/master/Dragger/screens/dragger.gif)
 
 
 V1.0.0
