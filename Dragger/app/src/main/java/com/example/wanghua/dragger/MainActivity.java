@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setCustomTitle();
 
         Logger.addLogAdapter(new AndroidLogAdapter(){
             @Override
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         layout.setBackgroundColor(Color.GRAY);
 
         tv_sign = findViewById(R.id.tv_sign);
+
     }
 
 
@@ -59,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void setCustomTitle() {
+        String ctitle = "当前第 " + (page + 1) + "页";
+        setTitle("Dragger  " + ctitle);
+        Toast.makeText(this, ctitle, Toast.LENGTH_SHORT).show();
+    }
 
     public void lastClick(View v) {
         if (page == 0) {
@@ -66,9 +73,11 @@ public class MainActivity extends AppCompatActivity {
         } else {
             layout.selectCurrentPage(--page);
         }
+        setCustomTitle();
     }
 
     public void nextClick(View v) {
         layout.selectCurrentPage(++page);
+        setCustomTitle();
     }
 }
