@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.wanghua.dragger.DraggerPageLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_drag"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/layout_sign"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv_cash_back"
+                android:text="加入View"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="addClick"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#B452CD	"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:background="#ffffff"
+                android:id="@+id/tv_sign"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="下一页"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="nextClick"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:background="#B452CD	"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="上一页"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="lastClick"
+                android:textColor="#fff"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:background="#B452CD	"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </com.example.wanghua.dragger.DraggerPageLayout>
+
+</LinearLayout>
